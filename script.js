@@ -1,2 +1,2 @@
 var f = F$('Subash', 'Basnet');
-console.log(f);
+f.greet().setLang('fn').greet(true);
