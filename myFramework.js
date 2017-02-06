@@ -1,4 +1,4 @@
-(function(global, $){
+;(function(global, $){
     
     // 'new' an object
     var myFrame = function(firstName, lastName, language){
@@ -132,7 +132,7 @@
     // trick borrowed from jQuery so we don't have to use the 'new' keyword
     myFrame.init.prototype = myFrame.prototype;
     
-    // attach our myFrame to the global object, and provide a shorthand '$F' for ease 
-    global.myFrame = global.$F = myFrame;
+    // attach our myFrame to the global object, and provide a shorthand 'F$' for ease 
+    global.myFrame = global.F$ = myFrame;
     
 }(window, jQuery));
